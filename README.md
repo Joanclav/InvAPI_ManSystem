@@ -103,9 +103,9 @@ La API estará disponible en:
 
 ---
 
-## 📖 Documentación interactiva (Swagger)
+## 📖 Pruebas y Exploración (Postman)
 
-Navega a `https://localhost:{puerto}/swagger` para explorar y probar todos los endpoints con la UI de Swagger.
+Navega a `https://www.postman.com/` y crea un nuevo espacio de trabajo. Para explorar, documentar y probar todos los endpoints de la API utilizaremos Postman.
 
 ---
 
@@ -113,7 +113,7 @@ Navega a `https://localhost:{puerto}/swagger` para explorar y probar todos los e
 
 ### 1. Registrar un usuario
 ```http
-POST /api/auth/register
+POST https://localhost:5XXX/api/auth/register
 Content-Type: application/json
 
 {
@@ -125,7 +125,7 @@ Content-Type: application/json
 
 ### 2. Obtener el token JWT
 ```http
-POST /api/auth/login
+POST https://localhost:5XXX/api/auth/login
 Content-Type: application/json
 
 {
@@ -143,7 +143,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Usar el token en las peticiones
+### 3. Usar el token obtenido en las peticiones
 ```http
 Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 ```
@@ -152,7 +152,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 
 ## 📦 Endpoints de Productos
 
-> Todos requieren el header `Authorization: Bearer {token}`
+> Todos requieren autenticación con el token JWT.
 
 | Método | Ruta | Descripción | Roles |
 |--------|------|-------------|-------|
@@ -164,7 +164,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 
 ### Ejemplo – Crear producto
 ```http
-POST /api/products
+POST https://localhost:5000//api/products
 Authorization: Bearer {token}
 Content-Type: application/json
 
@@ -198,7 +198,7 @@ Content-Type: application/json
 - **SQL Server** – Persistencia
 - **BCrypt.Net-Next** – Hashing de contraseñas
 - **Microsoft.AspNetCore.Authentication.JwtBearer** – Autenticación JWT
-- **Swashbuckle / Swagger** – Documentación de la API
+- **Swashbuckle** – Documentación de la API
 
 ---
 
