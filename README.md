@@ -98,14 +98,14 @@ dotnet run
 ```
 
 La API estará disponible en:
-- `https://localhost:7XXX`
+- `http://localhost:7XXX`
 - `http://localhost:5XXX`
 
 ---
 
 ## 📖 Pruebas y Exploración (Postman)
 
-Navega a `https://www.postman.com/` y crea un nuevo espacio de trabajo. Para explorar, documentar y probar todos los endpoints de la API utilizaremos Postman.
+Navega a `http://www.postman.com/` y crea un nuevo espacio de trabajo. Para explorar, documentar y probar todos los endpoints de la API utilizaremos Postman.
 
 ---
 
@@ -113,7 +113,7 @@ Navega a `https://www.postman.com/` y crea un nuevo espacio de trabajo. Para exp
 
 ### 1. Registrar un usuario
 ```http
-POST https://localhost:5XXX/api/auth/register
+POST http://localhost:5XXX/api/auth/register
 Content-Type: application/json
 
 {
@@ -125,7 +125,7 @@ Content-Type: application/json
 
 ### 2. Obtener el token JWT
 ```http
-POST https://localhost:5XXX/api/auth/login
+POST http://localhost:5XXX/api/auth/login
 Content-Type: application/json
 
 {
@@ -164,7 +164,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 
 ### Ejemplo – Crear producto
 ```http
-POST https://localhost:5000//api/products
+POST http://localhost:5000//api/products
 Authorization: Bearer {token}
 Content-Type: application/json
 
