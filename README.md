@@ -164,7 +164,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 
 ### Ejemplo – Crear producto
 ```http
-POST http://localhost:5000//api/products
+POST http://localhost:5000/api/products
 Authorization: Bearer {token}
 Content-Type: application/json
 
