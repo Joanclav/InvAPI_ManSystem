@@ -7,7 +7,7 @@ API RESTful para gestión de inventario construida con **.NET 8**, **Entity Fram
 ## 📐 Arquitectura
 
 ```
-InventarioAPI/
+InvAPI_ManSystem/
 ├── Controllers/          # Capa de presentación – endpoints HTTP
 │   ├── AuthController.cs
 │   └── ProductosController.cs
@@ -52,7 +52,7 @@ dotnet tool install --global dotnet-ef
 ### 1. Clonar el repositorio
 ```bash
 git clone https://github.com/Joanclav/InvAPI_ManSystem.git
-cd InventarioAPI
+cd InvAPI_ManSystem
 ```
 
 ### 2. Configurar la cadena de conexión
